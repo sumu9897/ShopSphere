@@ -7,8 +7,8 @@ const productSchema = new mongoose.Schema(
     category: { type: String, required: true },
     stock: { type: Number, required: true, min: 0 },
     image: { type: String, default: "https://via.placeholder.com/300x200" },
-    brand: { type: String, default: "Generic" }
+    brand: { type: String, default: "Generic" },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 module.exports = mongoose.model("Product", productSchema);
